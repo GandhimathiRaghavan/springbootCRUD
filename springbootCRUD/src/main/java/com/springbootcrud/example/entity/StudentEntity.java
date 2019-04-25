@@ -28,6 +28,19 @@ public class StudentEntity {
 	@Column(name = "mothername")
 	private String mothername;
 	
+	public StudentEntity() {
+		
+	}
+
+	public StudentEntity(Integer id, String studentname, String studentsection, String fathername, String mothername) {
+		super();
+		this.id = id;
+		this.studentname = studentname;
+		this.studentsection = studentsection;
+		this.fathername = fathername;
+		this.mothername = mothername;
+	}
+
 	public Integer getId() {
 		return id;
 	}
